@@ -3,8 +3,17 @@ self.addEventListener('install', () => {
 })
 
 self.addEventListener('push', (event) => {
-    const data = event.data ? event.data.json() : {};
-    console.log('********************************** ZZZZZZZZZ');
+    let data = { title: "Notification", body: "Pas de contenu" };
+
+    if (event.data) {
+        try {
+            data = event.data.json();
+        } catch (err) {
+            data = { title: "Notification", body: event.data.text() };
+        }
+    }
+
+    console.log('Notification sent');
     
     event.waitUntil(
         self.registration.showNotification(data.title, {
@@ -15,6 +24,6 @@ self.addEventListener('push', (event) => {
 })
 
 self.addEventListener('notificationclick', (event) => {
-    console.log('------------------ZZZZZZZZZZ' + event.notification.data);
+    console.log('Clicked on notification' + event.notification.data);
 })
 

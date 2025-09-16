@@ -8,7 +8,7 @@ import { NotificationPayload } from '../test-notif/notification-payload';
 })
 export class PushNotificationHttpService {
 
-  private url = 'http://localhost:8000/service-worker/push-subscription'
+  private url = 'http://localhost:8080/service-worker/push-subscription'
 
   constructor(private http: HttpClient) { }
 

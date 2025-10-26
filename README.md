@@ -3,7 +3,7 @@
 ## Contexte
 
 ### Description
-Il s'agit d'un projet réaliser durant mon alternance dans le but de me former aux service worker et noyification push.
+Il s'agit d'un projet réaliser durant mon alternance dans le but de me former aux service worker et notification push.
 
 Ceci est la partie client du projet, cette application front-end Angular permet à un utilisateur de recevoir des notifications push dans son navigateur via un service worker.
 

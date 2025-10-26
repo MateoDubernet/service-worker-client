@@ -1,6 +1,13 @@
 # Application Client – Notifications Push
 
+## Contexte
+
+### Description
 Cette application front-end Angular permet à un utilisateur de recevoir des notifications push dans son navigateur via un service worker.
+
+### Projet lié
+Cette application est utilisé conjointement avec le projet serveur disponible ici :
+https://github.com/MateoDubernet/service-worker-server
 
 ---
 

@@ -3,7 +3,9 @@
 ## Contexte
 
 ### Description
-Cette application front-end Angular permet à un utilisateur de recevoir des notifications push dans son navigateur via un service worker.
+Il s'agit d'un projet réaliser durant mon alternance dans le but de me former aux service worker et noyification push.
+
+Ceci est la partie client du projet, cette application front-end Angular permet à un utilisateur de recevoir des notifications push dans son navigateur via un service worker.
 
 ### Projet lié
 Cette application est utilisé conjointement avec le projet serveur disponible ici :
@@ -11,7 +13,45 @@ https://github.com/MateoDubernet/service-worker-server
 
 ---
 
-## Fonctionnement de l'application
+## Prérequis
+
+- Node.js et npm installés
+- Angular CLI installé globalement (`npm install -g @angular/cli`)
+- Navigateur compatible Push API et Notifications API (Chrome ou Firefox recommandé)
+- Service worker activé dans le navigateur
+
+---
+
+## Installation & Lancement
+### 1. Cloner le projet
+```bash
+    git clone <url-du-repo>
+    cd <nom-du-dossier>
+```
+
+### 2. Installer les dépendances
+```bash
+    npm install
+```
+ou
+```bash
+    npm install --force
+```
+
+### 3. Lancer l’application côté client
+```bash
+    ng serve
+```
+
+### 4. Lancer l’application côté serveur
+Lien serveur: https://github.com/MateoDubernet/service-worker-server
+
+### 5. Ouvrir l'application
+Aller à l'adresse localhost:4200
+
+---
+
+## Fonctionnalités
 
 1. **Activation des notifications**
    - L'utilisateur clique sur le bouton **"Activer notification"**.
@@ -22,26 +62,3 @@ https://github.com/MateoDubernet/service-worker-server
    - Après avoir activé les notifications, l'utilisateur peut cliquer sur le bouton **"Envoyer notification"**.
    - Cette action déclenche un appel au serveur qui envoie la notification push au navigateur.
    - Le service worker reçoit l'événement `push` et affiche la notification avec le titre et le message reçus.
-
----
-
-## Prérequis
-
-- Node.js et npm installés
-- Angular CLI installé globalement (`npm install -g @angular/cli`)
-- Navigateur compatible Push API et Notifications API (Chrome ou Firefox recommandé)
-- Service worker activé dans le navigateur
-- Serveur backend capable d'envoyer les notifications push via les clés VAPID
-
----
-
-## Installation et lancement
-
-1. **Installer les dépendances**
-npm install
-
-2. **Lancer l'application**
-ng serve
-
-3. **Ouvrir l'application dans le navigateur**
-Par défaut : http://localhost:4200

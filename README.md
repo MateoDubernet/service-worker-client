@@ -51,7 +51,7 @@ ou
 Lien serveur: https://github.com/MateoDubernet/service-worker-server
 
 ### 6. Ouvrir l'application
-Aller à l'adresse localhost:4200
+Aller à l'adresse localhost:4200 dans le navigateur (google chrome ou firefox)
 
 ---
 

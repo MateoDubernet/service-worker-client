@@ -25,8 +25,12 @@ https://github.com/MateoDubernet/service-worker-server
 ## Installation & Lancement
 ### 1. Cloner le projet
 ```bash
-    git clone <url-du-repo>
-    cd <nom-du-dossier>
+    git clone https://github.com/MateoDubernet/service-worker-client.git
+```
+
+### 2. Aller sur le projet
+```bash
+    cd service-worker-client
 ```
 
 ### 2. Installer les dépendances
